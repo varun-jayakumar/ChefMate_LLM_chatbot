@@ -4,9 +4,7 @@
 
 [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://youtu.be/ebfmJ8vLCmA?si=ofeOq8RHzisfycVW)
 
-This guide provides instructions on how to set up and run the Llama 3 and Gemma large language models using the Ollama library. Ensure you have Docker installed on your system before proceeding.
-
-**Welcome to ChefMate!** 👨‍🍳
+## Welcome to ChefMate!\*\* 👨‍🍳
 
 ChefMate is your friendly culinary assistant designed to help you find recipes, suggest meal plans, and provide cooking tips based on your dietary preferences and calorie needs. This README file provides instructions on how to run the chatbot locally using Ollama, how to interact with it through the UI built on Streamlit, and details the unique features of the application.
 
@@ -14,6 +12,7 @@ ChefMate is your friendly culinary assistant designed to help you find recipes, 
 
 - [ChefMate - Chat Bot](#chefmate---chat-bot)
   - [Video Tutorial:](#video-tutorial)
+  - [Welcome to ChefMate!\*\* 👨‍🍳](#welcome-to-chefmate-)
   - [Table of Contents](#table-of-contents)
   - [How to Run LLMs Locally](#how-to-run-llms-locally)
     - [Prerequisites](#prerequisites)
