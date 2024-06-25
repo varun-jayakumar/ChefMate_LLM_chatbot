@@ -3,13 +3,18 @@ import requests
 import json
 
 API_URL = "http://localhost:11434/api/chat"
-MODEL = "chat_bot_gemma"
 MODEL = "chat_bot"
 
+st.set_page_config(
+    page_title="ChefMate - Chat Bot",
+    page_icon=":shallow_pan_of_food:",  # This uses an emoji as the favicon. Replace with an image path if available.
+    layout="centered",
+    initial_sidebar_state="auto"
+)
 
 col1, col2 = st.columns([9, 1])
 with col1:
-    st.title("ChefMate - chat bot")
+    st.title("ChefMate - Chat Bot")
     st.markdown("""
         **Welcome to ChefMate!** 👨‍🍳
         
@@ -75,13 +80,54 @@ for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.write(message["content"])
 
+# Custom CSS for small, grayed-out button text
+st.markdown("""
+    <style>
+        .small-gray-button {
+            font-size: 12px;
+            color: gray;
+            background-color: #f0f0f0;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .small-gray-button:hover {
+            color: black;
+            background-color: #e0e0e0;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+# JavaScript for handling button clicks
+st.markdown("""
+    <script>
+        function sendPrompt(prompt) {
+            const input = window.parent.document.querySelector('input[data-testid="stChatInput"]');
+            const nativeInputValueSetter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value').set;
+            nativeInputValueSetter.call(input, prompt);
+            const ev2 = new Event('input', { bubbles: true });
+            input.dispatchEvent(ev2);
+        }
+    </script>
+""", unsafe_allow_html=True)
+
+# Suggested prompts
+st.markdown("#### Suggested Prompts:")
+st.markdown("""
+    <button class="small-gray-button" onclick="sendPrompt('I want a recipe for dinner.')">I want a recipe for dinner.</button>
+    <button class="small-gray-button" onclick="sendPrompt('I\'m looking for a meal plan.')">I'm looking for a meal plan.</button>
+    <button class="small-gray-button" onclick="sendPrompt('Can you give me some cooking tips?')">Can you give me some cooking tips?</button>
+""", unsafe_allow_html=True)
+
 # Handle dynamic key for user input to reset the input field
 input_key = f"user_input_{st.session_state.input_key}"
 
 if st.session_state.loading:
-    st.text_input("What's up?", key=input_key, disabled=True)
+    st.text_input("message ChefMate", key=input_key, disabled=True)
 else:
-    user_input = st.chat_input("What's up?", key=input_key)
+    user_input = st.chat_input("message ChefMate", key=input_key)
 
 if user_input:
     # Display user message in chat message container and add to history
