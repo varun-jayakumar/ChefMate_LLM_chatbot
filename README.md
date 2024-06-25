@@ -1,5 +1,11 @@
 # ChefMate - Chat Bot
 
+## Video Tutorial:
+
+[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://youtu.be/ebfmJ8vLCmA?si=ofeOq8RHzisfycVW)
+
+This guide provides instructions on how to set up and run the Llama 3 and Gemma large language models using the Ollama library. Ensure you have Docker installed on your system before proceeding.
+
 **Welcome to ChefMate!** 👨‍🍳
 
 ChefMate is your friendly culinary assistant designed to help you find recipes, suggest meal plans, and provide cooking tips based on your dietary preferences and calorie needs. This README file provides instructions on how to run the chatbot locally using Ollama, how to interact with it through the UI built on Streamlit, and details the unique features of the application.
@@ -7,16 +13,15 @@ ChefMate is your friendly culinary assistant designed to help you find recipes, 
 ## Table of Contents
 
 - [ChefMate - Chat Bot](#chefmate---chat-bot)
+  - [Video Tutorial:](#video-tutorial)
   - [Table of Contents](#table-of-contents)
   - [How to Run LLMs Locally](#how-to-run-llms-locally)
     - [Prerequisites](#prerequisites)
   - [Steps to run the project:](#steps-to-run-the-project)
   - [Interacting with ChefMate](#interacting-with-chefmate)
-      - [Suggested Prompts](#suggested-prompts)
-    - [ Target Users ](#-target-users-)
-    - [Unique Features](#unique-features)
+  - [Target Users](#target-users)
+  - [Unique Features](#unique-features)
   - [Modelfile Details](#modelfile-details)
-  - [Modelfile Details](#modelfile-details-1)
     - [Parameters](#parameters)
     - [Instructions](#instructions)
   - [Testing](#testing)
@@ -61,7 +66,7 @@ ollama run chat_bot
 
 The user interface (UI) is built using Streamlit, which allows users to interact with ChefMate seamlessly. Once the Streamlit application is running, you can access the chatbot through your web browser.
 
-#### Suggested Prompts
+Suggested Prompts
 
 ```
 To make it easier for users to get started, the UI includes buttons with suggested prompts:
@@ -74,7 +79,7 @@ To make it easier for users to get started, the UI includes buttons with suggest
 Chat Input
 Users can also type their own queries into the chat input box to receive personalized assistance.
 
-### <ins> Target Users <ins>
+## Target Users
 
 **ChefMate is designed for:**
 
@@ -82,7 +87,7 @@ Home cooks looking for new recipes
 Individuals seeking meal plans based on their dietary preferences and calorie needs
 Anyone in need of cooking tips and advice
 
-### <ins>Unique Features<ins>
+## Unique Features
 
 **Personalized Recipe Suggestions:**
 ChefMate provides recipe recommendations based on the ingredients you have and your calorie goals.
@@ -95,8 +100,6 @@ ChefMate is programmed to only respond to food-related queries, ensuring it prov
 ## Modelfile Details
 
 The Modelfile used to create ChefMate includes specific instructions to ensure the chatbot remains focused on food-related topics. This prevents it from answering unrelated questions or providing opinions, ensuring users receive consistent and relevant responses.
-
-## Modelfile Details
 
 The Modelfile is a blueprint used to create and configure the chatbot model. Here’s an explanation of the parameters and instructions used in the ChefMate Modelfile:
 
