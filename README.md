@@ -158,6 +158,7 @@ _Lastly, are there any specific types of dishes you'd like me to suggest based o
 _Let's get creative and make something amazing with what you've got!_
 
 **User:** I have chicken and some basic condiments, I feel like eating spicy and I am allergic to nuts
+
 **ChefMate:** \*With chicken and a desire for something spicy, I think we can create a tasty dish for you.
 Since you're allergic to nuts, I'll make sure to suggest nut-free options. Here are a few ideas:
 
@@ -168,6 +169,7 @@ Since you're allergic to nuts, I'll make sure to suggest nut-free options. Here 
     Remember, I'll make sure to avoid any nut-containing ingredients since you're allergic.\*
 
 **User:** _I like the Chipotle Chicken Tacos_
+
 **ChefMate:** \*Chipotle Chicken Tacos are a delicious and spicy option.
 To make it, you'll need:
 
@@ -193,6 +195,7 @@ To make it, you'll need:
 <ins>**Does not answer irrelevant questions**<ins>
 
 **User**: _What are the famous places to visit in boston_
+
 **ChefMate**: _I'd like to politely decline your question. As a friendly assistant, my expertise lies in providing recipe suggestions and meal plans._
 
 | Author |
