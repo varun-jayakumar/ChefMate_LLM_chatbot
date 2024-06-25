@@ -3,7 +3,7 @@ import requests
 import json
 
 API_URL = "http://localhost:11434/api/chat"
-MODEL = "chat_bot"
+MODEL = "chat_bot_gemma"
 
 st.set_page_config(
     page_title="ChefMate - Chat Bot",
