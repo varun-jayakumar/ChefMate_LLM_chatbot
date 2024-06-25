@@ -1,5 +1,7 @@
 # ChefMate - Chat Bot
 
+![alt text](/assets/image.png)
+
 ## Video Tutorial:
 
 [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://youtu.be/ebfmJ8vLCmA?si=ofeOq8RHzisfycVW)
